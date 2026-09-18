@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="隐私政策 for CubeWords (offline word game).">
+  <link rel="alternate" hreflang="en" href="https://sarcopods.github.io/cubewords-legal/privacy.html"/>
+  <link rel="alternate" hreflang="zh-Hans" href="https://sarcopods.github.io/cubewords-legal/privacy-zh.html"/>
+  <link rel="alternate" hreflang="zh-Hant" href="https://sarcopods.github.io/cubewords-legal/privacy-zh-Hant.html"/>
+  <title>隐私政策 — CubeWords</title>
+  <style>
+    :root {
+      --brand:        #D98253;
+      --brand-soft:   rgba(217, 130, 83, 0.10);
+      --brand-border: rgba(217, 130, 83, 0.25);
+      --bg:           #ffffff;
+      --bg-alt:       #f7f8fc;
+      --surface:      #ffffff;
+      --text-1:       #111827;
+      --text-2:       #4b5563;
+      --text-3:       #9ca3af;
+      --border:       #e5e7eb;
+      --radius:       12px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand-soft:   rgba(217, 130, 83, 0.15);
+        --brand-border: rgba(217, 130, 83, 0.30);
+        --bg:           #0d1117;
+        --bg-alt:       #161b22;
+        --surface:      #1c2130;
+        --text-1:       #f0f2f8;
+        --text-2:       #9ca3af;
+        --text-3:       #6b7280;
+        --border:       rgba(255,255,255,0.08);
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text-1);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 52px 28px 88px;
+    }
+    .page-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 44px;
+    }
+    .brand-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: linear-gradient(140deg, #F3C7A8 0%, #D98253 60%, #A85B33 100%);
+      color: #fff;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 16px rgba(217,130,83,0.30);
+    }
+    .header-text { flex: 1; }
+    .header-text h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      color: var(--text-1);
+    }
+    .header-meta {
+      margin-top: 6px;
+      font-size: 0.875rem;
+      color: var(--text-3);
+    }
+    .lang-nav {
+      font-size: 0.875rem;
+      color: var(--text-3);
+      margin: -28px 0 24px;
+    }
+    .lang-nav a { color: var(--brand); }
+    .lang-nav strong { color: var(--text-2); font-weight: 600; }
+    .lang-nav-select-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: -28px 0 24px;
+      font-size: 0.875rem;
+      color: var(--text-3);
+    }
+    .lang-nav-select-label { color: var(--text-3); flex-shrink: 0; }
+    .lang-nav-select-el {
+      min-width: 11rem;
+      max-width: min(100%, 22rem);
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-1);
+      font: inherit;
+      cursor: pointer;
+    }
+    .lang-nav-select-el:focus {
+      outline: 2px solid var(--brand);
+      outline-offset: 2px;
+    }
+    .callout {
+      background: var(--brand-soft);
+      border: 1px solid var(--brand-border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin: 28px 0 36px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .callout-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
+    .callout p {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text-1);
+      margin: 0;
+      line-height: 1.6;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-1);
+      margin: 36px 0 10px;
+      padding-left: 14px;
+      border-left: 3px solid var(--brand);
+      line-height: 1.4;
+    }
+    p {
+      font-size: 0.9375rem;
+      color: var(--text-2);
+      margin-bottom: 12px;
+    }
+    ul, ol {
+      font-size: 0.9375rem;
+      color: var(--text-2);
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 8px; }
+    strong { color: var(--text-1); font-weight: 600; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .online-note {
+      font-size: 0.8125rem;
+      font-style: italic;
+      color: var(--text-3);
+      margin-top: 8px;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-copy { font-size: 0.8125rem; color: var(--text-3); }
+    .footer-links { display: flex; gap: 18px; }
+    .footer-links a { font-size: 0.8125rem; color: var(--text-3); }
+    .footer-links a:hover { color: var(--brand); }
+    @media (max-width: 600px) {
+      .wrap { padding: 36px 20px 64px; }
+      .header-text h1 { font-size: 1.5rem; }
+      .brand-icon { width: 46px; height: 46px; font-size: 18px; }
+    }
+    @media print {
+      body { background: #fff; color: #000; }
+      .callout { border: 1px solid #ccc; background: #f9f9f9; }
+      footer { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page-header">
+    <div class="brand-icon">CW</div>
+    <div class="header-text">
+      <h1>隐私政策</h1>
+      <p class="header-meta">CubeWords · 更新：2026-09-12</p>
+    </div>
+  </header>
+
+<nav class="lang-nav"><a href="/privacy.html">English</a> · <a href="/privacy-zh.html">简体中文</a> · <strong>繁體中文</strong></nav>
+
+<h2>概要</h2>
+<p>CubeWords 是一款離線文字遊戲。我們不收集、傳輸或出售任何個人資料。你在遊戲中產生的一切都儲存在你的裝置本機，唯一的例外是購買環節（見下文）。</p>
+<h2>我們不收集的資料</h2>
+<ul><li>無需註冊帳號，無需提供電子郵件。</li><li>不收集個人資料、通訊錄、照片、位置或健康資料。</li><li>不使用廣告識別碼，不跨應用程式追蹤（我們從不請求 App Tracking Transparency 授權）。</li><li>不向開發者回傳任何分析、遙測或當機報告。</li><li>你的遊戲內容——拼過的單字、得分、統計、已解鎖詞彙——僅儲存在你裝置上的本機檔案中。</li></ul>
+<h2>購買時處理的資料</h2>
+<p>若你購買應用內解鎖項目「完整版遊戲」，付款由 Apple App Store 完成。我們使用 <strong>RevenueCat</strong>（RevenueCat, Inc.）驗證權益，並支援你在其他裝置上復原購買。此過程中 RevenueCat 會處理：</p>
+<ul><li>自動產生的裝置／安裝識別碼；</li><li>App Store 收據／交易紀錄。</li></ul>
+<p>RevenueCat 是我們的購買驗證服務提供者，受其自身隱私條款約束（<a href="https://www.revenuecat.com/privacy）。任何購買資料都不會被出售或用廣告。">https://www.revenuecat.com/privacy）。任何購買資料都不會被出售或用廣告。</a></p>
+<h2>兒童</h2>
+<p>CubeWords 沒有聊天功能、沒有使用者內容分享、沒有資料收集，適合全年齡使用。</p>
+<h2>資料保留與你的權利</h2>
+<p>由於伺服器端不存在個人資料，刪除即為本機操作：移除 App 即從裝置上移除全部遊戲資料。你亦可透過 Apple 的「問題反映」管道（reportaproblem.apple.com）查詢與購買相關的資訊。</p>
+<h2>聯絡方式</h2>
+<p>如有疑問，請寄信至 support@cubewords.app。</p>
+<h2>變更</h2>
+<p>若本政策發生重大變更，我們將更新本頁面及 App 內設定頁所示的的政策版本。</p>
+  <!-- Footer -->
+  <footer>
+    <span class="footer-copy">© 2026 CubeWords</span>
+    <nav class="footer-links" aria-label="Legal pages">
+      <a href="/terms-zh-Hant.html">服务条款</a>
+    </nav>
+  </footer>
+
+</div>
+</body>
+</html>
